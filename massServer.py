@@ -1,12 +1,9 @@
-import discord, asyncio, socket, json, time, sys, requests
-from colorama import *
-import io, random, threading, requests, os
+import discord, asyncio, sys, requests
+import io, random, requests, os
 from discord.ext import commands
 from discord.ext.commands import Bot
 from colorama import Fore, init
-from selenium import webdriver
 bot = commands.Bot(description='SERVER SPAMMER!', command_prefix='x')
-bot.remove_command('help')
 
 def Clear():
     os.system('cls')
@@ -34,9 +31,6 @@ else:
     input("")
 Clear()
 
-
-print(f'''{Fore.WHITE}Starting...''')
-
 def MassServers():
     print("Spamming servers..")
 
@@ -50,16 +44,4 @@ def MassServers():
             print('done')
             input()
     bot.run(token, bot=False)
-
-
-def mainanswer():
-    answer = input(f"")
-    if answer == 'start':
-        MassServers()
-    else:
-        print("error")
-        MassServers()
-
-MassServers()
-
     
